@@ -1,3 +1,12 @@
+How the code was structured?
+
+basically we have a nodeJS express Server running with some features like express json body parser, a basic response handler, router and sequelize models.
+
+The nodeJS and the all libs are updated to it's latest version and the whole code was written in TypeScript. there's a folder called context, used to routing all the endpoints by different packages (each package of routers corresponds a sequelize model) and also versioning the URL.
+There's also Controllers and Services for each application model and it's respectively utils folder (errors and dtos).
+I wrote some pretty basics unit tests, only to demonstrate the basic unit tests concept (Setup components, Mocking data and expects).
+
+
 # DEEL BACKEND TASK
 
   

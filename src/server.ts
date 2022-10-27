@@ -16,9 +16,9 @@ export default class Server {
     private configService() {
         this.app.use(express.json());
         this.app.use(this.responseHandler);
+        this.app.use('/api', router);
         this.app.set('sequelize', sequelize);
         this.app.set('models', sequelize.models);
-        this.app.use('/api', router);
     }
 
     private responseHandler(serverResponse: any, req: any, res:any, next: any): void {
